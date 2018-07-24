@@ -118,6 +118,15 @@ $('.enc4').click(function() {
         $("#V2").removeClass("encierra")
     }
 });
+$('.enc5').click(function() {
+
+    if ($(this).hasClass('encierra')) {
+        $(this).removeClass('encierra')
+    } else {
+        $(this).addClass('encierra')
+    }
+
+});
 
 var resp_cor_len3_act13_p14 = {
     inicio: ["Awapít", "img/i2_p44_act64.png"],
@@ -253,7 +262,7 @@ function insertDraggable() {
                 "draggable" : "true",
                 "ondragstart" : "drag(event)"
             });
-                
+
         } */
 
 
@@ -307,7 +316,7 @@ function calcularNotaGeneral(total_nota, r_correctas, op_seleccionadas, total_pr
     }
     document.getElementById('bt_comprobar').disabled = true;
     //setTimeout('document.location.reload()',tiempoReload)
-    
+
 
 }
 
@@ -345,7 +354,7 @@ function sumar(){
     if($("#R3").hasClass("subrayar")){
         $("#R3").css({"background-color": "#00ff00"});
     }else if ($("#R1").hasClass("subrayar")){
-        
+
         $("#R1").css({"background-color": "#ff0000"});
     }else{
         $("#R2").css({"background-color": "#ff0000"});
@@ -354,7 +363,7 @@ function sumar(){
     if($("#S2").hasClass("subrayar")){
         $("#S2").css({"background-color": "#00ff00"});
     }else if ($("#S1").hasClass("subrayar")){
-        
+
         $("#S1").css({"background-color": "#ff0000"});
     }else{
         $("#S3").css({"background-color": "#ff0000"});
@@ -363,7 +372,7 @@ function sumar(){
     if($("#T1").hasClass("subrayar")){
         $("#T1").css({"background-color": "#00ff00"});
     }else if ($("#T2").hasClass("subrayar")){
-        
+
         $("#T2").css({"background-color": "#ff0000"});
     }else{
         $("#T3").css({"background-color": "#ff0000"});
@@ -372,7 +381,7 @@ function sumar(){
     if($("#U1").hasClass("subrayar")){
         $("#U1").css({"background-color": "#00ff00"});
     }else if ($("#U2").hasClass("subrayar")){
-        
+
         $("#U2").css({"background-color": "#ff0000"});
     }else{
         $("#U3").css({"background-color": "#ff0000"});
@@ -380,6 +389,6 @@ function sumar(){
     var subtotal = parseInt(resp1)+parseInt(resp2)+parseInt(resp3)+parseInt(resp4);
     var total = subtotal/2;
     $("#nt1").val(parseFloat(total));
-  
+
 
 }

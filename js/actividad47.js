@@ -24,10 +24,10 @@ $('.enc2').click(function() {
     }
 });
 var respr1 = 0,
-    respr2 = 0;
-respr3 = 0,
-    respr4 = 0;
-respr5 = 0,
+    respr2 = 0,
+    respr3 = 0,
+    respr4 = 0,
+    respr5 = 0,
     respr6 = 0;
 
 function Letras() {
